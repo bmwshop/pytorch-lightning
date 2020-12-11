@@ -66,8 +66,6 @@ class CoraDataset(LightningDataModule):
     Nodes represent documents and edges represent citation links.
     Training, validation and test splits are given by binary masks.
     c.f https://github.com/rusty1s/pytorch_geometric/blob/master/torch_geometric/datasets/planetoid.py
-
-    >>> CoraDataset()  # doctest: +ELLIPSIS +NORMALIZE_WHITESPACE
     """
 
     NAME = "cora"
@@ -169,8 +167,6 @@ class DNAConvNet(LightningModule):
     Towards Dynamic Neighborhood Aggregation in Graph Neural Networks"
     <https://arxiv.org/abs/1904.04849>`_ paper
     c.f https://github.com/rusty1s/pytorch_geometric/blob/master/torch_geometric/nn/conv/dna_conv.py#L172
-
-    >>> DNAConvNet()  # doctest: +ELLIPSIS +NORMALIZE_WHITESPACE
     """
 
     def __init__(
